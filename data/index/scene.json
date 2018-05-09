@@ -1,0 +1,102 @@
+{
+  "type": "scene",
+  "properties": {
+    "height": 59.77301387137453,
+    "width": 100.0,
+    "baseExtent": [
+      281663.6991570699,
+      1533339.0890132198,
+      297832.21770174406,
+      1543003.4998457236
+    ],
+    "crs": "EPSG:32651",
+    "proj": "+proj=utm +zone=51 +datum=WGS84 +units=m +no_defs",
+    "rotation": 0,
+    "wgs84Center": {
+      "lat": 13.905842919472706,
+      "lon": 121.05417850077913
+    },
+    "zExaggeration": 1.0,
+    "zShift": 0.0
+  },
+  "layers": [
+    {
+      "type": "layer",
+      "id": 1,
+      "properties": {
+        "name": "CUENCA_landslide",
+        "queryable": 1,
+        "visible": true,
+        "type": "polygon",
+        "objType": "Extruded"
+      },
+      "data": {
+        "materials": [
+          {
+            "type": 0,
+            "c": 2851770,
+            "o": 0.517
+          },
+          {
+            "type": 2,
+            "c": 2302755,
+            "o": 0.517
+          },
+          {
+            "type": 0,
+            "c": 14096668,
+            "o": 0.517
+          },
+          {
+            "type": 0,
+            "c": 16777151,
+            "o": 0.517
+          }
+        ],
+        "blocks": [
+          {
+            "url": "./data/index/L0_GEOM0.json"
+          }
+        ]
+      }
+    },
+    {
+      "type": "layer",
+      "id": 2,
+      "properties": {
+        "name": "sar10",
+        "queryable": 1,
+        "visible": true,
+        "type": "dem",
+        "shading": true
+      },
+      "data": [
+        {
+          "type": "block",
+          "layer": 2,
+          "block": 0,
+          "grid": {
+            "width": 259,
+            "height": 155,
+            "url": "./data/index/L1_DEM0.bin"
+          },
+          "width": 100.0,
+          "height": 59.77301387137453,
+          "translate": [
+            0.0,
+            0.0,
+            0
+          ],
+          "material": {
+            "type": 0,
+            "image": {
+              "url": "./data/index/L1_IMG0.png"
+            },
+            "ds": 1
+          },
+          "sides": true
+        }
+      ]
+    }
+  ]
+}
